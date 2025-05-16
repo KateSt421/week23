@@ -1,0 +1,56 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tariff-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  padding: 30px 50px;
+}
+
+.tariff-card {
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  width: 20%;
+}
+
+.tariff-card:hover {
+  cursor: pointer;
+}
+
+.tariff-card:nth-child(1) {
+  background-color: #4caf50; /* Зеленый */
+}
+
+.tariff-card:nth-child(2) {
+  background-color: #ff9800; /* Оранжевый */
+}
+
+.tariff-card:nth-child(3) {
+  background-color: #2196f3; /* Синий */
+}
+
+.tariff-card:nth-child(4) {
+  background-color: #9c27b0; /* Фиолетовый */
+}
+
+.highlighted {
+  border: 15px solid rgb(238, 42, 7); /* Выделение тарифа с ценой 550р */
+  background-color: #ffc107; /* Яркий цвет */
+}
+
+.tariff-card:hover {
+  background-color: rgb(83, 81, 81);
+}
