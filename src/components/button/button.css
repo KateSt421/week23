@@ -1,0 +1,18 @@
+.select-button {
+  padding: 15px 55px;
+  border: 1px solid rgb(45, 44, 44);
+  background-color: #969090;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+  &:hover {
+    box-shadow: 10px 5px 5px rgb(197, 196, 196);
+    background-color: #f40bf0;
+  }
+}
+.selected-tariff {
+  text-align: center;
+  font-size: 30px;
+}

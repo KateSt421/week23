@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import './index.css';
-import Tariff from './components/Tariff';
+import Tariff from './components/tariff/Tariff';
 import tariffs from './data';
-import Header from './components/Header';
+import Header from './components/header/Header';
 
 const TariffList = () => {
     const [selectedTariff, setSelectedTariff] = useState("");
@@ -26,8 +26,8 @@ const TariffList = () => {
                         onClick={() => handleTariffClick(tariff.name)} 
                     />
                 ))}
-                {selectedTariff && <h2>Вы выбрали тариф: {selectedTariff}</h2>}
             </div>
+            {selectedTariff && <h2 className="selected-tariff">Вы выбрали: {selectedTariff}</h2>}
         </>
     );
 };
