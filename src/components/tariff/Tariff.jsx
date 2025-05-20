@@ -8,7 +8,7 @@ const Tariff = ({ name, price, speed, volume, isHighlighted, onClick }) => {
             <p>Стоимость: {price}р</p>
             <p>Скорость: {speed}</p>
             <p>Объем трафика: {volume}</p>
-            <Button onClick={onClick} /> {/* Передаем обработчик клика */}
+            <Button onClick={onClick} />
         </div>
     );
 };
